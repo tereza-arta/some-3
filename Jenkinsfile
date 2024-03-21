@@ -17,6 +17,7 @@ pipeline {
                }
                sh 'chmod +x file.sh'
                sh 'ls -lah'
+               sh './file.sh $S_VAR' 
             }
             
         }
