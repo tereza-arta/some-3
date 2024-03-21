@@ -3,9 +3,10 @@ pipeline {
     stages {
         stage('stage 1') {
             steps {
-               script {           
-                def S_VAR = "hello"
-                env.S_VAR = S_VAR
+                echo "Hello from me...."
+                script {
+                    def S_VAR = "hello"
+                    env.S_VAR = S_VAR
                         }
                     } 
                 }
