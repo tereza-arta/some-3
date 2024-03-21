@@ -13,11 +13,12 @@ pipeline {
         stage('stage 2') {
             steps {
                script {
-                echo "This is your S_VAR, $S_VAR"    
-                } 
+                    echo "This is your S_VAR, $S_VAR"    
+               }
+               sh 'chmod +x file.sh'
+               sh 'ls -lah'
             }
-            sh 'chmod +x file.sh'
-            sh 'ls -lah'
+            
         }
     }
 }
