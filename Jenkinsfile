@@ -16,6 +16,7 @@ pipeline {
                 echo "This is your S_VAR, $S_VAR"    
                 } 
             }
+            sh
         }
     }
 }
