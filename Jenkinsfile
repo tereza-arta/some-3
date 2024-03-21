@@ -17,7 +17,7 @@ pipeline {
                 } 
             }
             sh 'chmod +x file.sh'
-            ls -lah
+            sh 'ls -lah'
         }
     }
 }
