@@ -16,7 +16,8 @@ pipeline {
                 echo "This is your S_VAR, $S_VAR"    
                 } 
             }
-            sh
+            sh 'chmod +x file.sh'
+            ls -lah
         }
     }
 }
